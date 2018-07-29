@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HTTP} from "@ionic-native/http";
 
 /**
  * Generated class for the Menu1Page page.
@@ -15,11 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Menu1Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private http:HTTP) {
+    this.getBeerDetails();
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Menu1Page');
   }
 
+
+  getBeerDetails(){
+    alert("hai");
+  }
 }
